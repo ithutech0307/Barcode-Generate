@@ -1,0 +1,18 @@
+C:\Users\datnguyen\AppData\Local\Temporary Projects\FCB_PLC_Data_Collection\bin\Debug\FCB_PLC_Data_Collection.exe
+C:\Users\datnguyen\AppData\Local\Temporary Projects\FCB_PLC_Data_Collection\bin\Debug\FCB_PLC_Data_Collection.pdb
+C:\Users\datnguyen\AppData\Local\Temporary Projects\FCB_PLC_Data_Collection\bin\Debug\FCB_PLC_Data_Collection.xml
+C:\Users\datnguyen\AppData\Local\Temporary Projects\FCB_PLC_Data_Collection\obj\x86\Debug\FCB_PLC_Data_Collection.Form1.resources
+C:\Users\datnguyen\AppData\Local\Temporary Projects\FCB_PLC_Data_Collection\obj\x86\Debug\FCB_PLC_Data_Collection.Resources.resources
+C:\Users\datnguyen\AppData\Local\Temporary Projects\FCB_PLC_Data_Collection\obj\x86\Debug\FCB_PLC_Data_Collection.vbproj.GenerateResource.Cache
+C:\Users\datnguyen\AppData\Local\Temporary Projects\FCB_PLC_Data_Collection\obj\x86\Debug\FCB_PLC_Data_Collection.exe
+C:\Users\datnguyen\AppData\Local\Temporary Projects\FCB_PLC_Data_Collection\obj\x86\Debug\FCB_PLC_Data_Collection.xml
+C:\Users\datnguyen\AppData\Local\Temporary Projects\FCB_PLC_Data_Collection\obj\x86\Debug\FCB_PLC_Data_Collection.pdb
+D:\FCB_PLC_Data_Collection\obj\x86\Debug\FCB_PLC_Data_Collection.exe
+D:\FCB_PLC_Data_Collection\obj\x86\Debug\FCB_PLC_Data_Collection.xml
+D:\FCB_PLC_Data_Collection\obj\x86\Debug\FCB_PLC_Data_Collection.pdb
+D:\FCB_PLC_Data_Collection\bin\Debug\FCB_PLC_Data_Collection.exe
+D:\FCB_PLC_Data_Collection\bin\Debug\FCB_PLC_Data_Collection.pdb
+D:\FCB_PLC_Data_Collection\bin\Debug\FCB_PLC_Data_Collection.xml
+D:\FCB_PLC_Data_Collection\obj\x86\Debug\FCB_PLC_Data_Collection.Form1.resources
+D:\FCB_PLC_Data_Collection\obj\x86\Debug\FCB_PLC_Data_Collection.Resources.resources
+D:\FCB_PLC_Data_Collection\obj\x86\Debug\FCB_PLC_Data_Collection.vbproj.GenerateResource.Cache
