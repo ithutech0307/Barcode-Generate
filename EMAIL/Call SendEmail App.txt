@@ -1,0 +1,88 @@
+---------------------------
+info file
+---------------------------
+ActionLog_Path=Log\ActionLog\
+EmailLog_Path=Log\Email\
+Emaillog_file=EmailLog.txt
+Send_Email=True
+Mail_App_Folder=Send Email\
+Mail_App_Name=Send Email.exe
+ 
+
+-----------------------------
+CODE
+-----------------------------
+
+    Public SettingFile = "Setting.ini"
+    Public SystemListFile = "SystemList.ini"
+    Public ActionLog As String = ""
+    Public EmailLog As String = ""
+
+    Public SendEmail_Task As Boolean
+    Public Send_mail_app_process As New System.Diagnostics.Process()
+    Public Process_MailApp As New ProcessStartInfo
+    Public Mail_App_Folder As String = ""
+    Public Mail_App_Name As String = ""
+-------------------------------------------------
+
+form_load
+
+
+        'SEND EMAIL IF EMAIL LOG EXISTS
+        '-----------------------------
+        If SendEmail_Task = True Then
+            If File.Exists(EmailLog) Then
+                Call WriteLog(ActionLog, "Start sending Email.")
+                Call Run_SendMailApp()
+                Call WriteLog(ActionLog, "Complete.")
+            End If
+        End If
+-------------------------------------------------
+
+    Sub Run_SendMailApp()
+        Process_MailApp.FileName = Mail_App_Name                    'Send_Email.exe
+        Process_MailApp.WorkingDirectory = Mail_App_Folder          'D:\Send Email\
+        Send_mail_app_process = Process.Start(Process_MailApp)      'Run mail app
+    End Sub
+-------------------------------------------------
+  Sub LoadSettings()
+
+        ActionLog = GetSettingItem(SettingFile, "ActionLog_Path")
+        Mail_App_Folder = GetSettingItem(SettingFile, "Mail_App_Folder")
+        SendEmail_Task = GetSettingItem(SettingFile, "Send_Email")
+        Mail_App_Name = GetSettingItem(SettingFile, "Mail_App_Name")
+
+    End Sub
+-------------------------------------------------
+
+    Function GetSettingItem(ByVal file As String, ByVal searchItem As String) As String
+
+        'get setting value for variable
+        Dim result = ""
+        For Each line In System.IO.File.ReadLines(file)             'ActionLog_Path=D:\ActionLog.txt
+            If line.ToLower.Contains(searchItem.ToLower & "=") Then 'ActionLog_Path=
+                result = line.Substring(searchItem.Length + 1)      'D:\ActionLog.txt
+                Exit For
+            End If
+        Next
+        Return result
+
+    End Function
+-------------------------------------------------
+
+ 'SEND EMAIL IF EMAIL LOG EXISTS
+            '-----------------------------
+            If SendEmail_Task = True Then
+                If File.Exists(Email_Log) Then
+                    Call Write_log(ActionLog, "Start sending Email.")
+                    Call Run_SendMailApp()
+                    Call Write_log(ActionLog, "Complete.")
+                End If
+            End If
+
+------------------------------------------
+sub Write_log(byval log, byval content)
+	
+	my.computer.filesystem.writealltext(log, format(now,"yyyy/MM/dd") & " " & content & vbnewline, true)
+
+end sub
